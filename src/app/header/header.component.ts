@@ -16,7 +16,7 @@ onSaveData(){
 }
 
 onFetchData(){
- this.dataStorageService.fetchRecipe();
+ this.dataStorageService.fetchRecipe().subscribe();
 }
 
 }

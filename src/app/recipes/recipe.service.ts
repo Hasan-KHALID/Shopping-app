@@ -9,22 +9,24 @@ export class RecipeService{
   recipeChanged = new Subject<Recipe[]>()
 
     
-    private recipes: Recipe[] = [
-    new Recipe("A test", "this is a test", 
-    "https://www.adobe.com/content/dam/cc/us/en/creative-cloud/photography/discover/food-photography/CODERED_B1_food-photography_p1a_690x455.jpg.img.jpg",
-    [
-        new Ingredient("Meet", 1),
-        new Ingredient("french fries", 39)
-    ]),
+  //   private recipes: Recipe[] = [
+  //   new Recipe("A test", "this is a test", 
+  //   "https://www.adobe.com/content/dam/cc/us/en/creative-cloud/photography/discover/food-photography/CODERED_B1_food-photography_p1a_690x455.jpg.img.jpg",
+  //   [
+  //       new Ingredient("Meet", 1),
+  //       new Ingredient("french fries", 39)
+  //   ]),
     
-    new Recipe("Another test", "this is a test", 
-    "https://www.adobe.com/content/dam/cc/us/en/creative-cloud/photography/discover/food-photography/CODERED_B1_food-photography_p1a_690x455.jpg.img.jpg",
-    [
-        new Ingredient("bread", 13),
-        new Ingredient("pizza", 39)
-    ])
+  //   new Recipe("Another test", "this is a test", 
+  //   "https://www.adobe.com/content/dam/cc/us/en/creative-cloud/photography/discover/food-photography/CODERED_B1_food-photography_p1a_690x455.jpg.img.jpg",
+  //   [
+  //       new Ingredient("bread", 13),
+  //       new Ingredient("pizza", 39)
+  //   ])
 
-  ];
+  // ];
+
+  private recipes: Recipe[] = [];
 
   constructor(private slService: ShoppingListService){}
 
