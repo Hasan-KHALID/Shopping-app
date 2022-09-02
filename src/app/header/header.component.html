@@ -18,8 +18,8 @@
                     <span class="caret"></span>
                 </a>
                 <ul style="cursor: pointer;" class="dropdown-menu" [ngClass]="{'show':r.isOpen}">
-                    <li><a >Save data</a></li>
-                    <li><a >Save data</a></li>
+                    <li><a (click)="onSaveData()" >Save data</a></li>
+                    <li><a (click)="onFetchData()" >Fetch data</a></li>
                 </ul>
             </li>
         </ul>
